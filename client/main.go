@@ -33,7 +33,7 @@ func main() {
 	defer cancel()
 	r, err := c.GetCountryLanguage(ctx, &pb.CountryLanguageRequest{Name: name})
 	if err != nil {
-		log.Fatalf("could not greet: %v", err)
+		log.Fatalf("could not search: %v", err)
 	}
 	log.Printf("Result: %s", r)
 }
