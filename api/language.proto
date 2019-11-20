@@ -1,0 +1,20 @@
+syntax = "proto3";
+package language;
+service CountryLanguage {
+    rpc GetCountryLanguage (CountryLanguageRequest) returns (CountryLanguageResponse);
+}
+
+// The request message containing country's name.
+message CountryLanguageRequest {
+  string name = 1;
+}
+
+// The response message containing the languages percentage spoken in the country
+message CountryLanguageResponse {
+  repeated Language languages = 1;
+}
+
+message Language {
+  string name = 1;
+  float percentage = 2;
+}
