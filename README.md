@@ -1,4 +1,4 @@
-# gRPC-poc
+# gRPC-demo
 
 Generate protobuffer from .proto file
 ```
